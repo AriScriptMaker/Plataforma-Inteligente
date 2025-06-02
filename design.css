@@ -1,0 +1,23 @@
+#dadosDeContato .text{
+   color: greenyellow;
+}
+
+    /* Garante que a section do carousel ocupe toda a tela */
+    .carousel-section {
+        margin: 0;
+        padding: 0;
+        height: 100vh; /* Ocupa 100% da altura da viewport */
+        overflow: hidden; /* Garante que nada ultrapasse os limites da section */
+      }
+    
+      /* Garante que os itens do carousel ocupem toda a altura */
+      .carousel-item {
+        height: 100%; /* Ocupa toda a altura da section */
+      }
+    
+      /* Ajusta a imagem para preencher o item do carousel */
+      .carousel-img {
+        width: 100%;  /* Ocupa toda a largura */
+        height: 100%; /* Ocupa toda a altura do item */
+        object-fit: cover; /* Mantém a proporção e cobre a área, cortando se necessário */
+      }
