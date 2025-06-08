@@ -1,49 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>plataforma_Inteligente_Matheus</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Trainer - Nome do Profissional</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <header>
-<section id="inicio">
-    <nav class="navbar bg-secondary border rounded">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="img/Iconimage.png" alt="fotodeperfil" class="rounded-circle" width="80" height="80"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#sobre">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#outrosProjetos">Outro Projetos</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Sobre
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#formações">Formações</a></li>
-                    <li><a class="dropdown-item" href="#dadosDeContato">Dados de Contato</a></li>
-                    <li><a class="dropdown-item" href="#experienciasProfissionais">Experiencia Profissional</a></li>
-                    <li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-</section>
-    </header>
+  <!-- Cabeçalho -->
+  <header class="bg-dark text-white text-center p-4">
+    <h1>Nome do Personal Trainer</h1>
+    <p>Seu corpo, sua melhor versão</p>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="container text-center my-5">
+    <img src="img/foto-personal.jpg" alt="Personal Trainer" class="img-fluid rounded">
+    <h2 class="mt-4">Transforme sua rotina com treino personalizado</h2>
+    <p>Atendimento online e presencial, para todos os níveis e objetivos.</p>
+    <a href="#contato" class="btn btn-primary mt-3">Entre em contato</a>
+  </section>
+
+  <!-- Último post do Instagram (placeholder) -->
+  <section class="container my-5">
+    <h3 class="text-center">Último Post do Instagram</h3>
+    <div id="instagram-post" class="text-center">
+      <p>Em breve: integração com API do Instagram</p>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-light text-center p-3">
+    <p>&copy; 2025 - Personal Trainer. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/instagram-api.js"></script>
 </body>
 </html>
