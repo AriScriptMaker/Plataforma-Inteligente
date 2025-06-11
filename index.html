@@ -30,11 +30,34 @@
   </div>
 </section>
 
-  <section>
-    <img src="img/missao.jpg">
-    <img src="img/visao.png">
-    <img src="img/valores.jpg">
-  </section>
+<section>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/missao.jpg" class="d-block w-100" alt="Missão">
+      </div>
+      <div class="carousel-item">
+        <img src="img/visao.png" class="d-block w-100" alt="Visão">
+      </div>
+      <div class="carousel-item">
+        <img src="img/valores.jpg" class="d-block w-100" alt="Valores">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
 
 <section class="consultoria-section py-5">
   <div class="container">
@@ -76,20 +99,41 @@
   </div>
 </section>
 
-  <section>
-    <h5>A quem se Destina</h5>
-    <p>
-      Iniciantes que querem começar com o pé direito.
-Para quem quer emagrecer de forma sustentável.
-Quem quer evitar lesões na prática esportiva ou no cotidiano.
-Para quem quer emagrecer de forma saudável e sustentável.
-    </p>
-  </section>
+<section class="container my-5">
+  <div class="row align-items-center">
+    <!-- Coluna de texto -->
+    <div class="col-md-6">
+      <h5>A quem se Destina:</h5>
+      <ul class="custom-list">
+        <li>Iniciantes que querem começar com o pé direito.</li>
+        <li>Para quem quer emagrecer de forma sustentável.</li>
+        <li>Quem quer evitar lesões na prática esportiva ou no cotidiano.</li>
+        <li>Para quem quer emagrecer de forma saudável e sustentável.</li>
+      </ul>
+    </div>
 
-  <section>
-    <img src="img/plano consultoria online.png">
-    <img src="img/plano consultoria hibrida.png">
-  </section>
+    <!-- Coluna da imagem -->
+    <div class="col-md-6 text-center">
+      <img src="/img/foto_pessoa_suada.JPG" class="img-fluid rounded img-ajustada" alt="Pessoas com o abdomen suado">
+    </div>
+  </div>
+</section>
+
+<section class="planos-section py-5">
+  <div class="container-fluid px-4">
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+      <img src="img/plano_consulta_online.jpg" alt="Plano Consultoria Online" class="img-plano lightbox-trigger">
+      <img src="img/plano_consulta_hibrida.jpg" alt="Plano Consultoria Híbrida" class="img-plano lightbox-trigger">
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox-modal" class="lightbox-modal">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+</div>
+
 
   <section>
     <h6>AULA EXPERIMENTAL GRATIS</h6>
@@ -107,12 +151,7 @@ Parque Mandaqui - São Paulo - SP
 </p>
   </section>
 
-  <section>
-    <img src="img/encerramento.png">
-  </section>
-  
-
-  <!-- Último post do Instagram (placeholder) -->
+    <!-- Último post do Instagram (placeholder) -->
   <section class="container my-5">
     <h3 class="text-center">Último Post do Instagram</h3>
     <div id="instagram-post" class="text-center">
@@ -120,15 +159,22 @@ Parque Mandaqui - São Paulo - SP
     </div>
   </section>
 
-  <!-- Rodapé -->
-    <section id="rodape">
-      <footer class="bg-secondary text-center text-lg-start">
-        <div class="text-center text-light p-3">
-          © 2024 Produzido por:
-        <a class="text-body" style="text-decoration: none">Aristeu</a>
-        </div>
-      </footer>
+<section class="w-100 my-5 text-center px-0" style="margin: 0; padding: 0;">
+  <img src="img/gratidao_final.PNG" alt="Mensagem de Gratidão" class="img-fluid" style="width: 100%; border-radius: 0;">
+</section>
 
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Rodapé -->
+<section id="rodape">
+  <footer class="text-center text-lg-start">
+    <div class="text-center text-light p-3">
+      © 2025 Produzido por:
+      <a class="text-body">Aristeu</a>
+    </div>
+  </footer>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
