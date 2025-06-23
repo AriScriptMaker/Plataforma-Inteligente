@@ -1,7 +1,50 @@
+.navbar-transparent {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+}
+
+.navbar-transparent .nav-link {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 1.1rem;
+  position: relative;
+  margin: 0 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar-transparent .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ff6a3d;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.navbar-transparent .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-transparent .nav-link:hover {
+  color: #9e1b00;
+}
+
+@media (max-width: 768px) {
+  .navbar-transparent .nav-link {
+    margin: 0 10px;
+    font-size: 1rem;
+  }
+}
+
 .custom-header {
   position: relative;
   width: 100%;
-  height: 100vh; /* altura da tela inteira */
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -11,7 +54,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* cobre todo o espaço */
+  object-fit: cover;
   object-position: center;
   z-index: 1;
 }
@@ -23,27 +66,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.5); /* escurece levemente para melhor leitura */
+  background: rgba(0, 0, 0, 0.5);
   text-align: center;
   padding: 2rem;
 }
 
-.header-title {
-  color: white;
-  text-transform: uppercase;
-  font-size: 2.8rem;
-  font-family: 'Impact', 'Arial Black', sans-serif;
+body {
+  color: #fff;
+  background-color: #000;
 }
 
-/* Seções com fundo escuro ou gradiente */
 .inicio-section,
 .consultoria-section {
-  background: linear-gradient(to bottom, #9e1b00, #ff6a3d); /* vermelho escuro para claro */
+  background: linear-gradient(to bottom, #9e1b00, #ff6a3d);
   color: white;
   padding: 60px 0;
 }
 
-/* Título padrão para seções */
 .section-title {
   font-family: 'Impact', 'Arial Black', sans-serif;
   font-size: 2rem;
@@ -53,29 +92,14 @@
   padding-left: 10px;
 }
 
-/* Imagem ajustada para ocupar 100% do card, altura limitada e com objeto coberto */
-.img-ajustada {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0; /* arredondar só as bordas superiores da imagem */
-  display: block;
-}
-
-/* Parágrafos globais com cor branca */
-body {
-  color: #fff;
-  background-color: #000; /* fundo geral escuro */
-}
-
 .custom-list {
-  list-style: none; /* Remove o marcador padrão */
-  padding-left: 0;  /* Remove o recuo padrão da UL */
+  list-style: none;
+  padding-left: 0;
 }
 
 .custom-list li {
   position: relative;
-  padding-left: 30px; /* Espaço à esquerda para o ícone */
+  padding-left: 30px;
   margin-bottom: 10px;
 }
 
@@ -92,19 +116,13 @@ body {
   background-repeat: no-repeat;
 }
 
-/* Estilização da seção consultoria */
-.consultoria-section {
-  background: linear-gradient(to bottom, #9e1b00, #ff6a3d);
-}
-
-/* Cards */
 .card {
   background-color: #000;
   color: #fff;
   border: none;
   border-radius: 12px;
-  overflow: hidden; /* para garantir que a borda arredondada corte a imagem */
-  height: 100%; /* para que o card ocupe toda a altura da coluna */
+  overflow: hidden;
+  height: 100%;
 }
 
 .card-title {
@@ -114,66 +132,12 @@ body {
   color: white;
 }
 
-/* Seção planos */
-.planos-section {
-  background-color: #000; /* fundo escuro como o resto do site */
-  text-align: center;
-}
-
-.img-plano {
-  flex: 1 1 45%; /* cresce proporcionalmente, ocupa ~45% */
-  max-width: 48%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.img-plano:hover {
-  transform: scale(1.02);
-}
-
-@media (max-width: 768px) {
-  .img-plano {
-    max-width: 100%;
-  }
-}
-
-/* Estilo para o modal */
-.lightbox-modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  padding-top: 60px;
-  left: 0;
-  top: 0;
+.img-ajustada {
   width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.9);
-}
-
-.lightbox-content {
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
   display: block;
-  margin: auto;
-  max-width: 90%;
-  max-height: 80%;
-  border-radius: 12px;
-}
-
-.lightbox-close {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 10000;
-}
-
-.lightbox-close:hover {
-  color: #ff6a3d;
 }
 
 #rodape footer {
@@ -189,4 +153,126 @@ body {
 
 #rodape footer a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .img-ajustada {
+    max-height: 250px;
+  }
+}
+.banner-section {
+    position: relative;
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+  }
+
+  .banner-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .banner-text h6 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #ff7b00;
+    font-weight: bold;
+  }
+
+  .banner-text p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .contact-buttons {
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .contact-buttons a {
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-whatsapp {
+    background-color: #25D366;
+  }
+
+  .btn-whatsapp:hover {
+    background-color: #1ebe5d;
+  }
+
+  .btn-instagram {
+    background-color: #E1306C;
+  }
+
+  .btn-instagram:hover {
+    background-color: #c72a5f;
+  }
+
+  .location {
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  @media (max-width: 768px) {
+    .banner-text {
+      padding: 15px 20px;
+    }
+
+    .banner-text h6 {
+      font-size: 1.1rem;
+    }
+
+    .banner-text p {
+      font-size: 0.9rem;
+    }
+
+    .contact-buttons a {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+
+.btn-voltar-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #9e1b00;
+  color: white;
+  padding: 12px 14px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.btn-voltar-topo:hover {
+  background-color: #ff6a3d;
+  transform: scale(1.1);
 }

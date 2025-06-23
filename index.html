@@ -10,14 +10,36 @@
   <title>Plataforma Inteligente - Matheus Valeriano</title>
 </head>
 <body>
-  <!-- Cabeçalho -->
-<header class="custom-header">
-  <div class="overlay">
-  </div>
+
+<header id="topo" class="custom-header">
+  <nav class="navbar navbar-expand-lg navbar-transparent">
+    <div class="container justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#inicio">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#identidade">Identidade</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#consultoria">Consultoria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#publico">Público</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="overlay"></div>
   <img src="img/imagem de capa matheus.jpg" alt="Imagem de capa Matheus" class="header-image">
 </header>
 
-<section class="inicio-section py-5">
+
+<section id="inicio" class="inicio-section py-5">
   <div class="container text-white">
     <h2 class="section-title">QUEM SOU EU?</h2>
     <img src="img/foto_Matheus_espelho.jpg" alt="Imagem do Matheus olhando para um espelho" class="img-fluid rounded mb-4 img-ajustada">
@@ -30,7 +52,7 @@
   </div>
 </section>
 
-<section>
+<section id="identidade" class="identidade Organizacional-section py-5">
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -59,11 +81,10 @@
   </div>
 </section>
 
-<section class="consultoria-section py-5">
+<section id="consultoria" class="consultoria-section py-5">
   <div class="container">
     <div class="row g-4">
 
-      <!-- Card 1 -->
       <div class="col-md-6">
         <div class="card h-100 shadow">
           <img src="img/foto_pessoas_abdominal.png" class="card-img-top img-ajustada" alt="Imagem lateral">
@@ -79,7 +100,6 @@
         </div>
       </div>
 
-      <!-- Card 2 -->
       <div class="col-md-6">
         <div class="card h-100 shadow">
           <img src="img/foto_pessoas_corda.jpg" class="card-img-top img-ajustada" alt="Imagem lateral">
@@ -99,9 +119,9 @@
   </div>
 </section>
 
-<section class="container my-5">
+<section id="publico" class="container my-5">
   <div class="row align-items-center">
-    <!-- Coluna de texto -->
+
     <div class="col-md-6">
       <h5>A quem se Destina:</h5>
       <ul class="custom-list">
@@ -112,59 +132,36 @@
       </ul>
     </div>
 
-    <!-- Coluna da imagem -->
     <div class="col-md-6 text-center">
       <img src="/img/foto_pessoa_suada.JPG" class="img-fluid rounded img-ajustada" alt="Pessoas com o abdomen suado">
     </div>
   </div>
 </section>
 
-<section class="planos-section py-5">
-  <div class="container-fluid px-4">
-    <div class="d-flex flex-wrap justify-content-center gap-3">
-      <img src="img/plano_consulta_online.jpg" alt="Plano Consultoria Online" class="img-plano lightbox-trigger">
-      <img src="img/plano_consulta_hibrida.jpg" alt="Plano Consultoria Híbrida" class="img-plano lightbox-trigger">
+<section id="contato" class="banner-section">
+  <img src="img/banner_areia_Matheustitle.JPG" alt="Banner">
+  <div class="banner-text">
+    <h6>AULA EXPERIMENTAL GRÁTIS</h6>
+    <p>Você precisa de um treino inteligente e personalizado, direcionado aos seus objetivos!<br>
+    Sou Personal Trainer com anos de experiência e posso te ajudar a alcançar os melhores resultados!</p>
+
+    <div class="contact-buttons">
+      <a href="https://wa.me/5511968689141" target="_blank" class="btn-whatsapp">WhatsApp</a>
+      <a href="https://www.instagram.com/matheusvalerianopersonal/" target="_blank" class="btn-instagram">Instagram</a>
     </div>
+    <p class="e-mail">
+      📧 mvr.educacaofisica@gmail.com
+    </p>
+    <p class="location">
+      📍 Parque Mandaqui - São Paulo - SP
+    </p>
   </div>
 </section>
-
-<!-- Lightbox Modal -->
-<div id="lightbox-modal" class="lightbox-modal">
-  <span class="lightbox-close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img">
-</div>
-
-
-  <section>
-    <h6>AULA EXPERIMENTAL GRATIS</h6>
-    <p>Você precisa de um treino inteligente
-e personalizado, direcionado aos seus
-objetivos!
-Sou Personal Trainer com anos de
-experiência e posso te ajudar a
-alcançar os melhores resultados!</p>
-<p>
-  (11) 96868-9141
-@matheusvalerianopersonal
-mvr.educacaofisica@gmail.com
-Parque Mandaqui - São Paulo - SP
-</p>
-  </section>
-
-    <!-- Último post do Instagram (placeholder) -->
-  <section class="container my-5">
-    <h3 class="text-center">Último Post do Instagram</h3>
-    <div id="instagram-post" class="text-center">
-      <p>Em breve: integração com API do Instagram</p>
-    </div>
-  </section>
 
 <section class="w-100 my-5 text-center px-0" style="margin: 0; padding: 0;">
   <img src="img/gratidao_final.PNG" alt="Mensagem de Gratidão" class="img-fluid" style="width: 100%; border-radius: 0;">
 </section>
 
-
-  <!-- Rodapé -->
 <section id="rodape">
   <footer class="text-center text-lg-start">
     <div class="text-center text-light p-3">
@@ -173,7 +170,9 @@ Parque Mandaqui - São Paulo - SP
     </div>
   </footer>
 </section>
-
+<a href="#topo" class="btn-voltar-topo">
+  <i class="bi bi-arrow-up-circle-fill"></i>
+</a>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="scripts.js"></script>
 </body>
