@@ -11,11 +11,4 @@ Este projeto foi desenvolvido como parte do Projeto de Extensão (PEX), com foco
 ## Estrutura Inicial
 - Página inicial com layout responsivo
 - Sessão de apresentação (hero section)
-- Integração futura com API do Instagram
 - Rodapé institucional
-
-## Como executar
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repo.git
-   cd seu-repo
